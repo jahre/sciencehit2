@@ -1,0 +1,126 @@
+/*wrapper styles*/
+.speaker-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.speaker-wrapper:nth-child(odd) .speaker-video{
+    order: -1;
+}
+.speaker-wrapper:nth-child(odd) .brief-photo{
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.speaker-container {
+    flex: 0 1 940px;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.floating-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+/*brief styles*/
+.speaker-brief {
+    flex: 2 0 400px;
+    min-height: 300px;
+    box-sizing: border-box;
+    position: relative;
+}
+.brief-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 130px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+}
+.brief-name {
+    margin: 0;
+    font-family: 'ptsanscaption', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: normal;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    color: #000;
+    padding-bottom: 6px;
+}
+.brief-photo {
+    margin-top: 25px;
+}
+.brief-field {
+    margin: 0;
+    font-family: 'ptserif', Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: #000;
+}
+
+/*video styles*/
+.speaker-video {
+    flex: 1 0 400px;
+    min-height: 300px;
+    background: #fa4556 url(../img/tour2/t2_video_bg.jpg) no-repeat 10px 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.video-link {
+    display: block;
+    font-family: 'ptserif', Arial, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+    width: 80%;
+    text-decoration: none;
+}
+.video-link:hover {
+    text-decoration: underline;
+}
+.video-link:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    background: url(../img/tour2/video-icon.png) no-repeat;
+}
+
+/*colors*/
+.pale_green {
+    background: #abdace;
+}
+.white {
+    background: #fff;
+}
+.pale_purple {
+    background: #b2bddb;
+}
+
+/*media-queries*/
+@media (max-width: 800px) {
+    .speaker-wrapper .speaker-video{
+        order: -1;
+    }
+    .speaker-wrapper .brief-photo{
+        order: -1;
+    }
+}
+@media (max-width: 400px) {
+    .speaker-video, .speaker-brief {
+       flex-basis: 200px;
+    }
+}

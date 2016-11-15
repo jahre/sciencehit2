@@ -1,0 +1,402 @@
+/*body{
+    min-width: 960px !important;
+}*/
+/* Header Styles
+______________________________________________________________*/
+.speaker-header{
+    height: 74px;
+    max-width: 940px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    width: 100%;
+}
+.speaker-header .nav-links{
+    height: auto;
+}
+.sp_nav{
+    width: 100%;
+}
+.sp_logo{
+    padding-right: 50px;
+}
+.sp_nav ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    width: 100%;
+}
+.sp_socials li{
+    margin: 0 4px;
+}
+
+.sp_header-background{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
+    background: url(../img/speakers/speaker-bg2.jpg) repeat-x 50% 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.sp_color{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(100, 100, 100, 0.83);
+}
+
+.sp_header-title, .sp_header-caption{
+    position: relative;
+}
+.sp_header-title{
+    font-family: 'ptserif', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 51px;
+    color: #fff;
+    max-width: 640px;
+    text-align: center;
+    line-height: 1;
+
+}
+.sp_header-caption{
+    font-family: 'ptserif', Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20px;
+    color: #fff;
+    max-width: 640px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.sp_author-info{
+    background: #f7f7f7;
+    width: 100%;
+    /*height: 240px;*/
+    padding: 20px;
+    box-sizing:border-box;
+}
+.sp_author-container{
+    max-width: 640px;
+    margin:0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.sp_info-photo{
+    height: 160px;
+    width: 160px;
+    -webkit-box-flex:0;
+        -ms-flex:0;
+            flex:0;
+}
+.sp_info-text{
+    padding-left: 35px;
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
+}
+.sp_info-name{
+    margin:0;
+    font-family:'ptsanscaption', Arial, sans-serif;
+    font-size:22px;
+    line-height:24px;
+    font-weight:normal;
+    letter-spacing:-2px;
+    text-transform:uppercase;
+    color:#000;
+    padding-bottom: 6px;
+}
+.sp_info-caption{
+    margin: 0;
+    font-family:'ptserif', Arial, sans-serif;
+    font-style:italic;
+    font-size:16px;
+    padding-bottom: 10px;
+    color:#000;
+}
+.sp_author-socials{
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.sp_author-socials li{
+    list-style: none;
+}
+.sp_author-socials a{
+    display: block;
+    height: 32px;
+    width:32px;
+    font-size: 0px;
+    color: transparent;
+    text-indent: -9999px;
+    background: url(../img/speakers/speaker-contacts.png);
+    margin-right: 8px;
+}
+
+.sp_author-socials a.sp_fb{
+    background-position: 0px 0px;
+}
+.sp_author-socials a.sp_li{
+    background-position: -32px 0px;
+}
+.sp_author-socials a.sp_email{
+    background-position: -64px 0px;
+}
+
+.sp_author-socials a.sp_fb:hover{
+    background-position: 0px -32px;
+}
+.sp_author-socials a.sp_li:hover{
+    background-position: -32px -32px;
+}
+.sp_author-socials a.sp_email:hover{
+    background-position: -64px -32px;
+}
+
+/* Video
+______________________________________________________________*/
+.sp_video-container{
+    padding-top: 40px;
+}
+
+/* Lection Text Styles
+______________________________________________________________*/
+.sp_lection{
+    padding: 40px 20px;
+    max-width: 640px;
+    border-bottom: 2px solid #f7f7f7;
+    box-sizing: border-box;
+}
+.lection-default{
+    font-family: 'ptsans', Arial, sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+.lection-quote{
+    font-family:'ptserif', Arial, sans-serif;
+    font-style:italic;
+    font-size:22px;
+    color:#000;
+    padding: 20px;
+    background: #f7f7f7;
+    box-sizing:border-box;
+}
+.lection-heading{
+    margin: 0;
+    margin-top: 50px;
+    color: #000;
+    font-size: 32px;
+    font-family: 'ptsans-narrow', Arial, sans-serif;
+}
+.lection-img{
+    text-align: center;
+}
+.lection-img img{
+    max-width: 640px;
+}
+.img-caption{
+    font-family: 'ptsans', Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Tag Cloud
+______________________________________________________________*/
+.sp_tag-cloud{
+    max-width: 640px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.tag{
+    font-family:'ptserif', Arial, sans-serif;
+    font-size: 18px;
+    color: #fb3e4d;
+    line-height: 34px;
+    background: #f7f7f7;
+    margin: 0 5px;
+    padding: 0 10px;
+    white-space:nowrap;
+}
+
+/* Epilogue styles
+______________________________________________________________*/
+.sp_epilogue{
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/speakers/epilogue-bg.jpg) no-repeat;
+    background-size: cover;
+}
+.epilogue-quote{
+    max-width: 600px;
+    margin: 0 auto;
+    font-family:'ptserif', Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+.quote-heading{
+    font-size: 30px;
+}
+
+/* Next Link
+______________________________________________________________*/
+.sp_next{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100px;
+    background: #f7f7f7;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.spacer{
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
+}
+.next-link{
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
+    padding-left: 40px;
+    box-sizing: border-box;
+    background: url(../img/speakers/next-red.gif) no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    text-decoration: none;
+}
+.nl_name{
+    margin: 0;
+    font-family: 'ptsanscaption', Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+}
+.nl_theme{
+    margin: 0;
+    font-family:'ptserif', Arial, sans-serif;
+    font-size: 24px;
+    color: #2196f3;
+}
+
+.sp_placeholder{
+    color: #000;
+    font-size: 50px;
+    font-family: 'ptsans-narrow', Arial, sans-serif; 
+}
+/* Color Specific Styles
+______________________________________________________________*/
+.sp_red-style .sp_color{
+    background: rgba(251, 62, 77, 0.83);
+}
+.sp_blue-style .sp_color{
+    background: rgba(12, 136, 235, 0.83);
+}
+.sp_red-style .next-link{
+    background: url(../img/speakers/next-blue.gif) no-repeat;
+}
+.sp_blue-style .next-link{
+    background: url(../img/speakers/next-red.gif) no-repeat;
+}
+.sp_red-style .tag{
+    color: #fb3e4d;
+}
+.sp_blue-style .tag{
+    color: #2196f3;
+}
+
+.sp_red-style .nl_theme{
+    color: #2196f3;
+}
+.sp_blue-style .nl_theme{
+    color: #fb3e4d;
+}
+
+/* Media-Queries
+______________________________________________________________*/
+
+@media (max-width: 960px) {
+    .speaker-header{
+        height: auto;
+    }
+    .speaker-header .nav-links{
+        height: auto;
+    }
+    .speaker-header .sp_nav > ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .speaker-header .nav-links li{
+        margin: 10px;
+    }
+    .speaker-header .sp_logo{
+        padding: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .lection-img img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .speaker-header .nav-links{
+        height: 20px;
+    }
+    .sp_header-title{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .sp_author-container{
+        flex-direction:column;
+        align-items:center;
+    }
+    .sp_info-text{
+        padding: 20px 0;
+        text-align: center;
+    }
+    .sp_author-socials{
+        justify-content:center;
+    }
+}
