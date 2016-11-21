@@ -1,3 +1,10 @@
+.tour2 .header {
+    background: url(../img/tour2/t2_header_bg.jpg) 50% 0 repeat-x;
+}
+.tour2 .themes-container {
+    background: #fff;
+}
+
 /*wrapper styles*/
 .speaker-wrapper {
     position: relative;
@@ -24,9 +31,15 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 50%);
-    opacity: 0.5;
+    width: 250px;
+    height: 250px;
     z-index: 2;
+}
+.image-element{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 250px;
 }
 
 /*brief styles*/
@@ -99,15 +112,141 @@
     background: url(../img/tour2/video-icon.png) no-repeat;
 }
 
-/*colors*/
+/*
+    Colors
+________________________________________________*/
+
+/*pale_green*/
+@keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  100%   { transform: rotate(360deg); }
+}
+@keyframes floating1 {
+  0%   { transform: rotate(0deg) translate(-200%, -80%); }
+  50%   { transform: rotate(0deg) translate(0%, 40%); }
+  100%   { transform: rotate(0deg) translate(200%, 5%); }
+}
+@keyframes floating2 {
+  0%   { transform: rotate(0deg) translate(-50%, -50%); }
+  50%   { transform: rotate(180deg) translate(50%, 50%); }
+  100%   { transform: rotate(360deg) translate(-50%, -50%); }
+}
 .pale_green {
     background: #abdace;
 }
+.pale_green .floating-image {
+    transform: rotate(0deg) translate(-200%, -80%);
+    opacity: 0.5;
+    animation: floating1 50s infinite alternate linear;
+}
+.pale_green .image-element.e1{
+    background: url(../img/tour2/floating-image.png) 50% 50% no-repeat;
+    animation: rotate 50s infinite linear;
+}
+.pale_green .speaker-video{
+    background: #8cc7b8 url(../img/tour2/t2_s1_video_bg.jpg) 0 100% no-repeat;
+}
+
+/*white*/
 .white {
     background: #fff;
 }
+
+/*pale_purple*/
 .pale_purple {
     background: #b2bddb;
+}
+.pale_purple .floating-image {
+    transform: rotate(0deg) translate(-200%, -80%);
+    opacity: 0.5;
+    animation: floating1 30s infinite alternate-reverse linear;
+}
+.pale_purple .image-element.e1{
+    background: url(../img/tour2/t2_floating_img3.png) 50% 50% no-repeat;
+    animation: rotate 20s infinite linear;
+}
+.pale_purple .speaker-video{
+    background: #564971 url(../img/tour2/t2_s3_video_bg.jpg) 100% 100% no-repeat;
+}
+
+/*white w02*/
+.white.w02 .speaker-video{
+    background: #309ff9 url(../img/tour2/t2_s4_video_bg.jpg) 0% 100% no-repeat;
+}
+
+
+/*light-grey*/
+.light-grey {
+    background: #adb5c4;
+}
+.light-grey  .floating-image {
+    transform: rotate(0deg) translate(-200%, -80%);
+    animation: floating1 10s infinite alternate-reverse linear;
+}
+.light-grey  .image-element.e1{
+    background: url(../img/tour2/t2_floating_img5.png) 50% 50% no-repeat;
+    animation: rotate 90s infinite linear;
+}
+.light-grey .speaker-video{
+    background: #97a1b4;
+}
+
+/*white w03*/
+.white.w03 .floating-image {
+    transform: rotate(0deg) translate(-200%, -80%);
+    animation: floating1 10s infinite alternate-reverse linear;
+}
+.white.w03 .image-element.e1{
+    background: url(../img/tour2/t2_floating_img6_1.png) 50% 50% no-repeat;
+    animation: floating2 20s infinite linear;
+}
+.white.w03 .image-element.e2{
+    background: url(../img/tour2/t2_floating_img6_2.png) 50% 50% no-repeat;
+    animation: rotate 1s infinite linear;
+}
+.white.w03 .image-element.e3{
+    background: url(../img/tour2/t2_floating_img6_3.png) 50% 50% no-repeat;
+    animation: floating2 10s infinite linear;
+}
+.white.w03 .speaker-video{
+    background: #f04141 url(../img/tour2/t2_s6_video_bg.jpg) 0% 100% no-repeat;
+}
+
+/*creme*/
+.creme {
+    background: #eacf9e;
+}
+.creme .floating-image {
+    transform: rotate(0deg) translate(-200%, -80%);
+    animation: floating1 180s infinite alternate-reverse linear;
+}
+.creme  .image-element.e1{
+    width: 310px;
+    background: url(../img/tour2/t2_floating_img7_1.png) 50% 50% no-repeat;
+}
+.creme  .image-element.e2{
+    background: url(../img/tour2/t2_floating_img7_2.png) 50% 50% no-repeat;
+    animation: floating2 180s infinite alternate-reverse linear;
+}
+.creme  .image-element.e3{
+    background: url(../img/tour2/t2_floating_img7_3.png) 50% 50% no-repeat;
+    animation: floating2 60s infinite linear;
+}
+.creme .speaker-video{
+    background: #daba7f;
+}
+
+/*white w04*/
+.white.w04 {
+    background: url(../img/tour2/t2_s8_bg.jpg) 50% 50% no-repeat;
+}
+.white.w04 .speaker-video{
+    background: #1278ca url(../img/tour2/t2_s8_video_bg.jpg) 0% 100% no-repeat;;
+}
+
+
+.red {
+    background: #f04141;
 }
 
 /*media-queries*/
